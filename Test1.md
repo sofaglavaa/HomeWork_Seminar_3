@@ -75,3 +75,11 @@ Git - это одна из реализаций распределённых с�
 + Третий
 
 ---
+
+![Река](https://avatars.mds.yandex.net/i?id=06ff3a5207637f1d7575908ccf5663f7-5305794-images-thumbs&n=13)
+
+***
+
+![Лес](https://avatars.mds.yandex.net/i?id=6e389555cbc350ff2da8de7c55b9548a-4809821-images-thumbs&n=13)
+
+---
