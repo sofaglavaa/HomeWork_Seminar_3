@@ -75,3 +75,8 @@ Git - это одна из реализаций распределённых с�
 + Третий
 
 ---
+
+![Картинка](https://avatars.mds.yandex.net/i?id=bcc66b8f7babf600e19652dd8604abae-4571323-images-thumbs&n=13)
+
+![Картинка](https://c.pxhere.com/photos/6d/fe/city_l_neburg_old_town_truss_historically_romantic_tourism_building-1209388.jpg!d)
+
