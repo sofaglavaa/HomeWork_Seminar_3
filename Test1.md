@@ -75,3 +75,7 @@ Git - это одна из реализаций распределённых с�
 + Третий
 
 ---
+
+![картинка](https://img.fonwall.ru/o/33/goryi-sneg-derevya-polyana.jpg?route=mid&amp;h=750)
+
+![Картинка](https://s1.1zoom.ru/b5050/297/Canada_Mountains_Scenery_488936_3840x2400.jpg)
