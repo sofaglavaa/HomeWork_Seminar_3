@@ -1,77 +1,103 @@
-# Инструкция для работы с Git и удалёнными репозиториями
-
-## Что такое Git?
-Git - это одна из реализаций распределённых систем контроля версий, имеющая как и локальные, так и удалённые репозитории. Является самой популярной реализацией систем контроля версий в мире.
-
-## Подготовка репозитория
-Для создание репозитория необходимо выполнить команду *git init*  в папке с репозиторием и у Вас создаться репозиторий (появится скрытая папка .git)
-
-## Создание коммитов
-
-### Git add
-Для добавления измений в коммит используется команда *git add*. Чтобы использовать команду *git add* напишите *git add <имя файла>*
-
-### Просмотр состояния репозитория
-Для того, чтобы посмотреть состояние репозитория используется команда *git status*. Для этого необходимо в папке с репозиторием написать *git status*, и Вы увидите были ли измения в файлах, или их не было.
-
-### Создание коммитов
-Для того, чтобы создать коммит(сохранение) необходимо выполнить команду *git commit*. Выполняется она так: *git commit -m "<сообщение к коммиту>*. Все файлы для коммита должны быть ***ДОБАВЛЕНЫ*** и сообщение к коммиту писать ***ОБЯЗАТЕЛЬНО***.
-
-## Перемещение между сохранениями
-Для того, чтобы перемещаться между коммитами, используется команда *git checkout*. Используется она в папке с пепозиторием следующим образом: *git checkout <номер коммита>*
-
-## Журнал изменений
-Для того, чтобы посмтреть все сделанные изменения в репозитории, используется команда *git log*. Для этого достаточно выполнить команду *git log* в папке с репозиторием
-
-## Ветки в Git
-
-### Создание ветки
-
-Для того, чтобы создать ветку, используется команда *git branch*. Делается это следующим образом в папке с репозиторием: *git branch <название новой ветки>*
-
-## Слияние веток
-
-Для того чтобы дабавить ветку в текущую ветку используется команда *git merge <name branch>*
-
-## Удаление веток
-Для удаления ветки ввести команду "git branch -d 'name branch'"
-
 ## Добавление картинок
-Для добавления *картинки* из интернета нужно написать следующее:  ![Картинка](https://bipbap.ru/wp-content/uploads/2021/11/1619541010_52-oir_mobi-p-nyashnie-kotiki-zhivotnie-krasivo-foto-57-730x856.jpg)
+Команда для добавления *картинки* выглядит сле .дующим образом
+![Котик](data:image/jpeg;base64,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)
 
-## Добавление ссылок:
-Для того, чтобы добавить *ссылку* надо совершить следующее: [Работа_с_markdown](https://help.vivaldi.com/ru/services-ru/forum-ru/markdown-formatting/#:~:text=Markdown%20%E2%80%94%20%D1%8D%D1%82%D0%BE%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8,%D0%B8%20%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%B0%20%D0%B2%D1%81%D0%B5%D1%85%20%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0%D1%85.)
+## Добавление ссылок
 
-## Добавление цитат:
-Чтобы *одиночную* цитату в текст, используется знак ">": 
->Кто глупее: дурак или тот, кто за ним следует?
+[Работа с markdown](https://lifehacker.ru/chto-takoe-markdown/)
 
-Чтобы добавить *цитаты под цитатами* используется просто ">>" или более (максимум 15)
->Кто глупее: дурак или тот, кто за ним следует?
+## Добавление цитаты
+
+Работа с **цитатами** выполняется через знак ">";
+>Кто глупее:дурак или тот, кто за ним следует?
 >>Уберите с моей дороги этот ходячий волосатый половик!
 
----
+## Оформление списков
 
-## Оформление списков:
-**Нумерованные** списки оформляются так:
 1. Первый
 2. Второй
 3. Третий
 
-**Ненумерованные**:
-* Первый
-* Второй
-* Третий
-
-***Либо так***:
-
-- Первый
-- Второй
-- Третий
-
-***И еще можно так***:
 + Первый
 + Второй
-+ Третийgi
 
----
+* Третий
+* Четвертый
+  
+  ***
+  ## Текст
+  ## **Инструкция для работы с Git и удалёнными репозиториями**
+
+## **Что такое Git?**
+
+*Git* - это одна из реализаций распределённых систем контроля версий, имеющая как и локальные, так и удалённые репозитории. Является самой популярной реализацией систем контроля версий в мире.
+***
+
+## Подготовка репозитория
+
+Для созданиz репозитория необходимо выполнить команду *git init*  в папке с репозиторием и у Вас создатся репозиторий (появится скрытая папка .git)
+
+## Создание коммитов
+
+## *Git add*
+Для добавления измений в коммит используется команда *git add*. 
+
+Чтобы использовать команду *git add* напишите *git add <имя файла>*
+
+## Просмотр состояния репозитория
+Для того, чтобы посмотреть состояние репозитория используется команда *git status*.
+
+ Для этого необходимо в папке с репозиторием написать *git status*, и Вы увидите были ли измения в файлах, или их не было.
+
+## Создание коммитов
+Для того, чтобы создать коммит(сохранение) необходимо выполнить команду *git commit*. 
+
+Выполняется она так: *git commit -m "<сообщение к коммиту>*. 
+
+Все файлы для коммита должны быть ***ДОБАВЛЕНЫ*** и сообщение к коммиту писать ***ОБЯЗАТЕЛЬНО***.
+
+## Перемещение между сохранениями
+Для того, чтобы перемещаться между коммитами, используется команда *git checkout*. 
+
+Используется она в папке с пепозиторием следующим образом: *git checkout <номер коммита>*
+
+## Журнал изменений
+Для того, чтобы посмотреть все сделанные изменения в репозитории, используется команда *git log*.
+
+ Для этого достаточно выполнить команду *git log* в папке с репозиторием
+
+## **Ветки в Git**
+
+## *Создание ветки*
+
+Для того, чтобы создать ветку, используется команда *git branch*. 
+
+Делается это следующим образом в папке с репозиторием: *git branch <название новой ветки>*
+
+## *Слияние веток*
+
+Для того чтобы дабавить ветку в текущую ветку используется команда *git merge <name branch>*
+
+## *Удаление веток*
+Для удаления ветки ввести команду "git branch -d 'name branch'"
+
+## Ещё котики
+![Котик 2](https://krasivosti.pro/uploads/posts/2021-04/1617975977_9-p-milii-grustnii-kotik-9.jpg)
+
+![Котик 3](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl7fRJ8u_0GH6SF0fnPAE6dIVJlxH5dZ5MYQ&usqp=CAU)
+
+## + Cсылка на анекдоты про котиков
+[Анекдоты про котиков](https://www.anekdotovmir.ru/anekdoty-pro/anekdoty-pro-zhivotnyx/anekdoty-pro-kotov/korotkie-anekdoty-pro-koshek/)
+
+## Топ дурацких кличек для котов
+
+1. Веник;
+2. Шпунтик;
+3. Ворчун;
+
+- Вентик;
+- Нехочуха;
+- Отчебучка;
+
+
+
