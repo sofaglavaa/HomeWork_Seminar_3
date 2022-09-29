@@ -75,3 +75,6 @@ Git - это одна из реализаций распределённых с�
 + Третий
 
 ---
+![Картинка](http://semeynaya-kuchka.ru/wp-content/uploads/2019/07/milye-kotiki-26.jpg)
+
+![Картинка](http://semeynaya-kuchka.ru/wp-content/uploads/2019/07/milye-kotiki-10.jpg)
