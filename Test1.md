@@ -75,3 +75,8 @@ Git - это одна из реализаций распределённых с�
 + Третий
 
 ---
+
+![картинка](https://andreyex.ru/wp-content/uploads/2016/10/What-is-GitHub.jpg)
+
+
+![картинка](https://w0.pngwave.com/png/770/499/github-source-code-repository-commit-fork-github-png-clip-art.png)
