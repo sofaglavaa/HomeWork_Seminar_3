@@ -1,44 +1,86 @@
 # Инструкция для работы с Git и удалёнными репозиториями
 
-## Что такое Git?
+## **Что такое Git?**
 Git - это одна из реализаций распределённых систем контроля версий, имеющая как и локальные, так и удалённые репозитории. Является самой популярной реализацией систем контроля версий в мире.
 
-## Подготовка репозитория
+***Подготовка репозитория***
+
 Для создание репозитория необходимо выполнить команду *git init*  в папке с репозиторием и у Вас создаться репозиторий (появится скрытая папка .git)
 
-## Создание коммитов
+***Создание коммитов***
 
-### Git add
+Git add
 Для добавления измений в коммит используется команда *git add*. Чтобы использовать команду *git add* напишите *git add <имя файла>*
 
-### Просмотр состояния репозитория
+***Просмотр состояния репозитория***
+
 Для того, чтобы посмотреть состояние репозитория используется команда *git status*. Для этого необходимо в папке с репозиторием написать *git status*, и Вы увидите были ли измения в файлах, или их не было.
 
-### Создание коммитов
+***Создание коммитов***
+
 Для того, чтобы создать коммит(сохранение) необходимо выполнить команду *git commit*. Выполняется она так: *git commit -m "<сообщение к коммиту>*. Все файлы для коммита должны быть ***ДОБАВЛЕНЫ*** и сообщение к коммиту писать ***ОБЯЗАТЕЛЬНО***.
 
-## Перемещение между сохранениями
+***Перемещение между сохранениями***
+
 Для того, чтобы перемещаться между коммитами, используется команда *git checkout*. Используется она в папке с пепозиторием следующим образом: *git checkout <номер коммита>*
 
-## Журнал изменений
+***Журнал изменений***
+
 Для того, чтобы посмтреть все сделанные изменения в репозитории, используется команда *git log*. Для этого достаточно выполнить команду *git log* в папке с репозиторием
 
 ## Ветки в Git
 
-### Создание ветки
+***Создание ветки***
 
 Для того, чтобы создать ветку, используется команда *git branch*. Делается это следующим образом в папке с репозиторием: *git branch <название новой ветки>*
 
-## Слияние веток
+***Слияние веток***
 
 Для того чтобы дабавить ветку в текущую ветку используется команда *git merge <name branch>*
 
-## Удаление веток
+***Удаление веток***
+
 Для удаления ветки ввести команду "git branch -d 'name branch'"
 
-## Добавление картинок
-Для добавления *картинки* из интернета нужно написать следующее:  ![Картинка](https://bipbap.ru/wp-content/uploads/2021/11/1619541010_52-oir_mobi-p-nyashnie-kotiki-zhivotnie-krasivo-foto-57-730x856.jpg)
+# Добавление картинок
 
-## Добавление ссылок:
-Для того, чтобы добавить *ссылку* надо совершить следующее: [Работа_с_markdown](https://help.vivaldi.com/ru/services-ru/forum-ru/markdown-formatting/#:~:text=Markdown%20%E2%80%94%20%D1%8D%D1%82%D0%BE%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8,%D0%B8%20%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%B0%20%D0%B2%D1%81%D0%B5%D1%85%20%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0%D1%85.)
+Для того что бы добавить *КАРТИНКУ* надо
+поставить восклицательный знак и далее без пробела в квадратных скобках написать название картинки, затем без пробела в круглых скобках указать путь к картинке 
 
+![картинка](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHcAugMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAAIDBAYHAf/EAEIQAAIBAwIDBQYCCAQEBwAAAAECAwAEERIhBTFBEyJRYXEGMoGRobEUQhUjUqLB0eHwYnSy8TM1cpIHFiQ2Q1OC/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAEDAgQF/8QAIBEAAgIDAQEAAwEAAAAAAAAAAAECEQMSITFBBFFhIv/aAAwDAQACEQMRAD8Ag4RIBJKc/mP3orNKChGOdB1gktZGJXZiT9ae96mnnWbOBsH3jabg45U3USNq8uMSSaq9j5VNp2TaK8yHpVZlOKISSKM5G9UJ51zSBMgditOt7po22NRPIrVEzAbjnSKRNJa8VkVcA1OeKu35sVl47ggaTtVqLLbmi2aboMveGUe9n1qsQXbPQVVDleYxVi3l7UNpGdIyfIeNIm5NkhcoN6hMofOTUssbHIIwagWBgaVjj/RwHaDFVJosOaJRqFG/OoZYiSTQhzkvhTjjAq0kedgai7JtVWrSJg2T1rWxNolhth1qyqJGKaWCDzqu0+Tg0Ey0ZVUEg1Wlvc9aik1Mu3Khl1lDuazZpIJG41cq1/Dif0fa5/8ApT7CucxzlAeZroHCnLcLs28YEP7orcS2JU2Wby2Uwhj+yPtWWuFzKQK1t6WMCgD8o+1ZW7jcOcCiWRFZw6QBVB3NMuJVjTINNmyqgmhHELnu4BrG7ZNx+DLm/wAMVzVF7sk1SmLFySd6aqt4ZqiRuONJFxLg5Oa9ExJ23NK34ddXMcjwwu4iXU+gZ0r4nyo3YcFu5+DKUtkJ7UyQz/mGB3kI6jGGHofPDo0kiHh9jLcgOMaNYRmJ2XPLPgPOtEnDZLS2OqAi7R+xCnBDGTAH7pc58QKKQWVjbG7SWI2bTxKGUNmPvDPxXUNvDOPCqUls/wCLtC0sjI+YAxf3MYaI58RhgD5isvhWGDZ9IZoOGqZ5XFy0cTIxREyQoG5Yc+8wIGOXPpTbL9GwXS8PMzNdzRPG6gEK0qvkAHG4JAUY6g1Lc8QuSs0d4uuZVhV2QAZI3T7nPpQkTMl/bz3oMs8ELzQyysFAJYEhsDmGLD4VhtFo/jqPoelFs2A5djrWIzMNIRQSoz5gAA+Y868it3Wzu9KK0HaKrPjqCcYoRwziE97xhGu0Z7e6lMsJkXcFe93v+oMAPSi8fFkN/ApjAsF1s0R95nLBQAOuN/kaKRiWD9CuWsmMsEKssts/ZE4998DX8u6PjURgUqjdojagSdO+n186vwcOMUdy6vhZAyF2bJj1sCzDP5jtj4ZpW8HZWCQQWq5iU8jsSdgSfAcgOpprpDN+O0+A42wADae6etNYqmw2q/xdZLd1hkfEdugU7beO3mfnWZmuyZCBQ0crTi6Lsz5OBTI4utNt2179asA4pWTfo1yqpg0NulVqs3EmnNDJpMvzoNxRFIOzaug8H/5TZf5eP/SK56X1E5roXBznhNl/l4/9IqkEWxrrDkkQaFM/sj7UB4lCqqTWheQCBP8ApH2rK8fvgqEDwqMvTok+GcvpfeAOwoFM2pjUt/cO7FR1qukLtzrS4QVekQAEqsVDKDup61cmsezhF1bEy2rHGoDeNv2W8D96YLfqeXWtd7JWrgsq/h7q3l7rQzLhmHVd+fwJ9Kojad8HewllfpIl1HGFgdiFmIyvgQccts7VrpOFR21uYYsLCZCxhB238D+XyPQihsXswnCb8XljNNBCw1NASXx4gY3NWhefi2ZUlLiM94PswoldHThhXpSmhW6kLMocsnYlJdwrDofI7j1x15eHh6rw420b4Ke5IWyV5YyfgN6lKsszgKzKwBIB72f4H1qvcXQiKyMxIDaZMDGoeY8fp89pO2dSSRDf24kSUliXkK5OPADP2+tAOIhpCY+ywzgKjN48/uCflWqYIUkMZUggOh8fH7g/OhphSS2diunTJnOeWB/XFZljGpFHhlvouYCc6Y4yACNj13+Iq9cQIjaodGpiO8Bvtvt4k4HwJ8asxRDQRpOdAyMcv7yBUV7ZTkAo4jijGzHck45Aeud/SjRtBskSxpJI8c0srLBESRGh97H5vXoPQUS4NJH+IBnRRhQBGD+rj8APE+JrPxPIkSRzLqKEaYlxg+BbfOKtx3ckelo1LPndQvy2/s+VCvwTo0/E/Z2HiMId3kjAyxwQF9awPGLD9GykGDLN7uQdl8QOfxPwArZWntI1mok4oywRAYCZJY+flXnHruxueFtc2KrMJjljCgZifEA7Z8zsKu1w4smJeow1oxxlhirGvPpQ26vI0crCI+zHVHLnPm3In02qs/FVAIBqVHnyg7Ll443zQa4kIO1Mnvy5xnnTYQZa0XxR19HLcaVyd66XwRtXBbBvG2jP7ornD2p0brXR+CLp4LYDwtox+6KpApFq2WuJ3nZQDDYIUViOJ3Rctk5ojxy8Zn0cgNqzlwxauRO5Bk6Vzu+epohaW7y92NSzeA50PGxyaJWVvNORqinaHGS0ChyPhVvWS1vhNDZu79+KTQpw5CE6fUcxW14Jw+a0WGSC4heDGSko7y+h6/EVJ7OcMimgjl/HvdKgx2M8el1+JAb4ZrQTJbwxMCBt/iJxVEkjpxYqOe8e9oOLTXbrbkiIHSip3sAdcePpRvhEtzJZJLdusz45qCM/yoLfvbR3DiM8mJCk7fOrq3rpBgRsCR3lG5+Y51qclXDpjFiv7ifWewt37p97UMg/Cq8PEc3KpeQGMuSDJ5+PhWX9pOIS94wkbe7hf51mLa6vVGrtZmJOWDElflSjAcpUdnSZVcwkLqRRgj7iq/ZRvg5AAG4HI7bfYfKsxwK+kuo1jlxG6AqDuvTr0656VrFtodCozhSDqbO4I2PT+960oC2GLMYIyc5flkjJ6+9/f9KF3xN47QzFiQDkY3z6nkBU3GJI47V8ygSyaQcE4Azvjz5ViOOtPckrCCkKtsi5364+9LUTkGrfifDp+72hMx3Z1Yn6f70as5LRVxGDIOeO8Bn47Vy6KKVbnUiEEbd0k4+9a7g7TdmhaVzv7udNSkqNwexa9o4TezLgjCnOnoB4Y5ZrR+wMCmG5tZQrxZAww2IxuMeFZ/iIZAsgx2a88nJP9P6Uf9j5Wjj7VomUE8z4Vvf/ACJx6XfaP2f4ZxF1t019p0itlCY+YO3piue8c9nZrOXsbO1jY7ByXd2TzJ91flXa2u4zbHkin3mC7n4Dn9a537cyT30vZRxXQhUZZpGVIyPIE5+dP4c2RKPTnIhOojZsHGRyNX7EiMjUtX4LEEbYNV7uEwgmsXZyqafC8JYmTBxW44SV/RVnjl2Cf6RXIZ79o3I1V1b2fYtwHhrHmbSI/uCqRRSGNpgXi9t7zeNATHvWo4pKGyKBXMfYhWP5uVculMeRg2aPTT7WFw//ABbi1fpKqkgeuN6LcFCJcLdSsoXOiPPUnbP1pvDOI297xniMoJWFEZlCMRyyfriuiEbNY4WrZr/ZuPi4ANxxP8WgGV1INQHketHr1joHaEaj7y1geB+1UohuYo3V2gDOgYDGARtnHgSc5rXy3aTxJKEwsiK2/mM4ommkdcECbnh8Ml4ZGfY81NN4jaRrCCBqUDf3TtUHErqRAdCk4HJG72PKhkt5cSwIe1eZCNtJIb0xUlbLPg684XayLn9U37SKMADxwaDS8OjSRViAVvHRjw86uXHEFgLQzRqzjnsGwfhUM00bKh1KmTyIBPwxXRAjJlmw4ehLGdCrAd4jOCB6UYsT+JtEniLhTyD7eVZyS8WKyn7GQoxAwWBIwCDt5bHagE/HryCQwR3eoKxAZCSMH1/pVVX0m7+Gzjkhu7q4huEkfszpUyA4Y9ceNDr63ETN2bIiYzj8zfWhfA+IBpe0mu9c8kpkZNJ7oxpyT1NEJpk7ZijaQD7xIyanID3s0dQ6rjwXTk0QghGnWYuzwM6t8/I1Ra5RlVFZ9TH8x96o7mIkxjWyFiCNzsKjPpWDoKI8VxMpABVP2vEdaMWM8zyKVJZeQHIDxoHbRJCBFkKxIJzzP9avQcWgtpuzOnfAOnYqMEj6D61NRbKuSSNrHb9vAyFu8RjBzj6UKuuAOsZFxNAsQ3jitoBHv45JO9CJva5rKFezWPVNHlAwPdOcAnx5eVFeD8W/SxuIZZQWjCuHfYhWGelXSpdObJFMzN5ELa4cAKB0AJP1NAuLONB3xtWp45awxkuLwP8AtM+cDyArEcSmR5MagVNZo87RqZnbxsyGuz+zn/t7hf8Ak4v9ArkfELcZUruT0rr3s/E6cB4ajDBW1iB/7BVYyTR2RaoJHhthIBI1sCQvMZGdvWop+AcHm3mtmOBzEjj7GpkkJQAk5xgY5f38aeGJY9M75yKVIrqv0UZfZTg34cLbwSxPnKMZWOk9DgnzoDN7FWVmGmshM1wwKSEOTkNs2xNa9mAzhlGTucimMW1YbAB3AJxmihpUZf8A8j2Fumqx7ZZtBR1eUkFTsRWgh4XaxwCIvKw06MNIeVWC+g/lJPPJqNpNIyCNxvmh/wBGM/QfD5EVX7bAG36yoG9nOH94oJlY9e0Iq9DMeZ33/ZNPWZW3Y4AJ5DNLVBszP3fsvYSZIMmskaSXG1Urn2ThfIE1wg64Ze99K1BljZsCXO+cEYxUTXEanBAOBuRyHxp0KzBcU9nb+JNUM7PGNiCBn0rIX1nPFNpNqwPPlXZ5542BDuig/lJoXc8PgkbfSyH/AA6qA9OdcL4XeTYAjWMc+8dvnWgs/ZC6ndTNelSMe6uc/WtTBYxQqG7NjvjOnn/tV+NhGf8AhSA9DpNFBwBW/srb27aTcMGO4woGfGr8XBYQuPxM24yp0jKemaJhlAYNoyTkZOCD6Gmdqo20Pkcu6R9tqWqC6KMfsvaacG6unY82Zxv8h9sVVk9hbO5nkmury5LyOG0R6dIAGMDIJxjAo3+IVcZIXbkV5fMinR3avyKn1B/lWkq8HdmYk/8AD+C9K/jL+5VI1WONU08lGASSOfPPrRrg3s1Dwi6Fz+NuJiEEek4AIAwMjxxRE3BOpVfbl+rGSKY9xIp06HJHUgD+P8KYh95w60u1ydQbxPex8DtQG99ibS7P6ziF4qj8qCPHr7tGxcll0sCFJ6vtVhJQ5AIwx89z8xSozrEzUXsHwtWBa4vHKnbLLz+Vai2sYYbeKJDJpRAozjOAKbJMCrCNjhf8WKnhbMSHve6KyoIHFIAG6j06Ssb893k0Hn57GvVmCx6/wwAx7wYP9VoLJc3RYsryKNZwOx26/sg/WoZbnvZJgRs5LAHn6dKLNB+O9cR7di8WdiXVfTY5qUSKNwqoM9Lhgvw0nasubuEKS93K48BGcj4gV4L+NixZZpADgBUCk/xxvjkKVjNPJeKF7NA5Y9Udnx55xUQ4gEBWQzk9FM313/hQLt5sAiE6P2nJ7vkMkYNOW6VnIN0SVGoJJGVz8WGCfjTsOBk3DMG7BO7zOpWbb12BqYXohTIm7PfcPGADnz2oHDcGJxNvFLqykskwBPmdjgUvxMkmoyyiUHftJZwQTnyTGOf02pWDCjcQVmJFwjqOemZlI9BvmvUuliOntEGdtBOT9XH2oI19AgCv3ixAA7IBQf8AtHzqL8TAwKCDXq2Ol9PywP4VpMVGjF8SNzID6EA/vH6Cq8l6qkqTEsY8yc+maBh7aEajbXAf0XAHxAxXrXsLAGMyICTjU+lh6adx8xRYJBj8ZEWJ0d7q3b/bJ/hSF0mQczjx1SnB8s53oEb0awGVWweck2rHxK/zp34lQMxuEP5mhTcjlzB2+FJyCg/HdRKP/hIJ3wAcfXnUgnYAGLKEc+oI9BWZW/Or9VdsDn87SD7jHzp44j2Y1PpBY41KVyftS2CjRrdElykqjBOcwE7+FQtxBgx1Jbsy88Kwxt1OKz0nFicAzS6eRBcDI694enWm/pUsxSKW5ijUDK9qpA28CcY8sU9h0ahLp7gGSO3Rxp3OT3efVR9Km7edVyIIwOfembJ+GCax8t6Jn7twztjdHmUZA6AA4HyqWGeAABYe8cDOeR6dB96ewUaI8QKEjIDg75RmPn3jpH1qxFxRCgXtGIf3c6Svnyask166u8cd3PFH0B0sh+BBHyFMjv54VZI57eTOx/UgE9RsoGfpRsFGxF9HNgAacHAUtnI8udGLcg28R0kdwbZ8vSubtxCSQAO9qoZgBG0L6R4+fx3rb8KcHhdmT2W8Ce5nT7o5eVCEzGouu5lBtiW1N/xJM89hj+W3Sqdxem3cRPLLJp30DZVyd8f70qVTXpr4VjxCBmDdpOzMdRGB3f7xT14jBn35n3GGBxt0xn+lKlQIik4rL3xLjc5UZO48Dg+teWfExLcFez7NsbYJYDw570qVA0SSX7R57Y6pATlAdOMcjyx41Ct6xk/Wa3K5xh8eFKlTQiSC5BfP67vYZe/kfWpWN45fVNP2WruqJT4+te0qEJlf8W6EapCMY3eJHPLxOakW4uZEzqmAAycy4x8vSlSoGOimcuqSNIRjOgSscjzzXv4hkVSXxgbZ/pSpVlgyJJphltY7w7oO4GfIio0u5MdmrAauioPvSpVkR7+LbsnZpHLtscyNy9MVBPd6Zi8Yj1IAS5iByPj6+FKlW0aH/jZjqK3gDKcHQGQnfnsKnZ5mZGnxJGRq1O7En0wdqVKtARyNHIWcPkOSVDEk7+NV3aSJlkLjGrYqMEnFKlQJju0ibfCE53A1A7+efvXS+Cf8msNsf+mj2/8AyKVKhCZ//9k=)
+
+## Добавление ссылок
+
+Для того чтобы добавить ссылку надо в квадратных скобках написать название ссылки и затем БЕЗ ПРОБЕЛА в круглых скобках написать путь к данной ссылке.
+< [инструкция] (https://gb.ru/lessons/289796)>
+
+[инструкция](https://gb.ru/lessons/289796)
+
+## Добавление списков и цитат
+
+### Добавление нумерованных списков
+Что бы добавить нумерованный список необходимо поставить номер по порядку и точку
+1. Первый
+2. Второй
+3. Третий
+   
+### Добавление ненумерованных списков
+Ненумерованные списки создаются тремя фигурами знаком + в начале списка, либо знаком - в начале списка, либо знаком * в начале списка.
+
+   + <+> первая фигура;
+   + <+> первая фигура;
+
+   - <-> вторая фигура;
+   - <-> вторая фигура;
+  
+  * <*> третья фигура;
+  * <*> третья фигура;
+  
+  ### Добавление цитат
+  
+  Для того чтобы добавить *цитату* bисользуется знак >. Один знак > первый уровень в цитате. 
+  Два знака >>  получится цитата в цитате.
+
+  >кто глупее, дурак или тот кто за ним следует?
+  >>что еще написать пока не придумал.
+  >>>решил и не придумывать ничего.
