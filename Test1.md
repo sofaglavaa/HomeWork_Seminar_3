@@ -2,19 +2,19 @@
 
 ## Что такое Git?
 Git - это одна из реализаций распределённых систем контроля версий, имеющая как и локальные, так и удалённые репозитории. Является самой популярной реализацией систем контроля версий в мире.
-
 ## Подготовка репозитория
 Для создание репозитория необходимо выполнить команду *git init*  в папке с репозиторием и у Вас создаться репозиторий (появится скрытая папка .git)
 
 ## Создание коммитов
 
-### Git add
+Git add
+
 Для добавления измений в коммит используется команда *git add*. Чтобы использовать команду *git add* напишите *git add <имя файла>*
 
-### Просмотр состояния репозитория
+## Просмотр состояния репозитория
 Для того, чтобы посмотреть состояние репозитория используется команда *git status*. Для этого необходимо в папке с репозиторием написать *git status*, и Вы увидите были ли измения в файлах, или их не было.
 
-### Создание коммитов
+## Создание коммитов
 Для того, чтобы создать коммит(сохранение) необходимо выполнить команду *git commit*. Выполняется она так: *git commit -m "<сообщение к коммиту>*. Все файлы для коммита должны быть ***ДОБАВЛЕНЫ*** и сообщение к коммиту писать ***ОБЯЗАТЕЛЬНО***.
 
 ## Перемещение между сохранениями
@@ -25,20 +25,50 @@ Git - это одна из реализаций распределённых с�
 
 ## Ветки в Git
 
-### Создание ветки
+Создание ветки
 
 Для того, чтобы создать ветку, используется команда *git branch*. Делается это следующим образом в папке с репозиторием: *git branch <название новой ветки>*
 
-## Слияние веток
+Слияние веток
 
 Для того чтобы дабавить ветку в текущую ветку используется команда *git merge <name branch>*
 
-## Удаление веток
+Удаление веток
+
 Для удаления ветки ввести команду "git branch -d 'name branch'"
 
+___
+
 ## Добавление картинок
-Для добавления *картинки* из интернета нужно написать следующее:  ![Картинка](https://bipbap.ru/wp-content/uploads/2021/11/1619541010_52-oir_mobi-p-nyashnie-kotiki-zhivotnie-krasivo-foto-57-730x856.jpg)
+Для того, чтобы добавить **картинку**, надо:
+![Картинка](data:image/jpeg;base64,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)
 
-## Добавление ссылок:
-Для того, чтобы добавить *ссылку* надо совершить следующее: [Работа_с_markdown](https://help.vivaldi.com/ru/services-ru/forum-ru/markdown-formatting/#:~:text=Markdown%20%E2%80%94%20%D1%8D%D1%82%D0%BE%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8,%D0%B8%20%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%B0%20%D0%B2%D1%81%D0%B5%D1%85%20%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0%D1%85.)
+___
 
+## Добавление ссылок
+Для того, чтобы добавить **ссылку**, надо:
+[Ссылка на сайт](https://redeemauto.ru/vykup-retro-avto/)
+
+## Добавление списков и цитат
+* Ненумерованные списки задаются тремя фигурами:
+* Первый
++ Второй
+- Третий
+Чтобы добавить *цитату* используем знак ">"
+>Первая интересная цитата.
+
+Чтобы добавить *цитату в цитате*, надо:
+>Вторая интересная цитата.
+>>Цитата в цитате!
+
+## Нумерованный список
+1. Первый
+2. Второй
+3. Третий
+
+## Добавим еще картинку
+![Картинка](https://hdpic.club/uploads/posts/2021-11/1638080650_1-hdpic-club-p-mustang-1967-1.jpg)
+
+## Добавим еще цитату
+>Ещё цитата!
+>>Ещё цитата в цитате!
